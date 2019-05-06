@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>pac man1</title>
+	<style>
+		* {
+			margin: auto;
+			background: #000;
+		}
+
+		#wrapper {
+			width: 1500px;
+			height: 700px;
+			background: yellow;
+			position: relative;
+			top: 100px;
+		}
+
+		#stage {
+			width: 1300px;
+			height: 100%;
+			background: #000;
+			position: relative;
+			float: left;
+			font-size: 0px;
+		}
+
+		#box1 {
+			width: 1000px;
+			height: 619px;
+			line-height: 150px;
+			position: absolute;
+			left: 200px;
+			background: url("./game_img/gameover.jpg");
+			opacity: 0.9;
+			display: none;
+			z-index: 7;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+			color: #fff;
+			border-radius: 100px;
+		}
+
+		#box2 {
+			width: 1000px;
+			height: 619px;
+			line-height: 150px;
+			position: absolute;
+			left: 200px;
+			background: #000;
+			opacity: 0.9;
+			display: none;
+			z-index: 7;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+			color: #fff;
+			border-radius: 100px;
+		}
+
+		#reload {
+			width: 300px;
+			height: 100px;
+			border-radius: 10px;
+			background: #000;
+			position: absolute;
+			font-size: 50px;
+			color: #fff;
+			top: 500px;
+			left: 350px;
+		}
+
+		#nextStage {
+			width: 300px;
+			height: 100px;
+			border-radius: 10px;
+			background: #000;
+			position: absolute;
+			font-size: 50px;
+			color: #fff;
+			top: 500px;
+			left: 350px;
+		}
+
+		.info {
+			width: 200px;
+			height: 700px;
+			background: #000;
+			float: left;
+			font-size: 30px;
+			color: #fff;
+		}
+
+		.info div {
+			width: 198px;
+			height: 100px;
+			line-height: 100px;
+			background: #666;
+			border: 2px solid #fff;
+			font-size: 40px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		#ABCITEM {
+			width:198px;
+			height:150px;
+			background: #blue;
+			float:left;
+			
+		}
+		#A{
+			width:50px;
+			height:50px;
+			float:left;
+			background:url("./game_img/A.png");
+			width:50px;
+			height:50px;
+			display:none;
+		}
+		#B{ 
+			width:50px;
+			height:50px;
+			float:left;
+			background:url("./game_img/B.png");
+			width:50px;
+			height:50px;
+			display:none;
+		}
+		#C{ 
+			width:50px;
+			height:50px;
+			float:left;
+			background:url("./game_img/C.png");
+			width:50px;
+			height:50px;
+			display:none;
+		}
+		
+		#back {
+			width: 200px;
+			height: 100px;
+			color: #fff;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+		}
+	</style>
+	<script src="./JS/ObjectManager.js"></script>
+	<script src="./JS/GameObj.js"></script>
+	<script src="./JS/Cell.js"></script>
+	<script src="./JS/Hero.js"></script>
+	<script src="./JS/Sensor.js"></script>
+	<script src="./JS/Enemy.js"></script>
+	<script src="./JS/Item.js"></script>
+	<script src="./JS/common.js"></script>
+	<script src="./JS/frames.js"></script>
+	<script src="./JS/map.js"></script>
+	<script src="./JS/ABCitem.js"></script>
+
+	<script>
+
+		var a;
+		var hero;
+		var key;//HERO
+		var stage;
+		var score;
+		var stage_number;
+		var blockArray = [];
+		var objectManager;
+		var autoKey = 35;//Enemy
+		var block;
+		var item;
+		var Aitem;
+		var Bitem;
+		var Citem;
+		var itemArray = [];
+		var n = 0;		//score
+		var m = 0;		// json 이용한 map 변경에 이용하는 변수
+		var box;
+		var reload;
+		var audio;
+		var audioP;
+		var randomCount = 0;//Enemy
+		var wrapper;
+		var A,B,C;
+		var setCount=0;			// 아이템 먹고 500 점 이상 스코어면 1씩 증가
+		var abcCount=0;		// 다음 스테이지로 넘어가도록 하는 카운트 변수
+		var playFlag=true;
+
+
+		function init() {
+			stage = document.getElementById("stage");
+			score = document.getElementById("score");
+			stage_number = document.getElementById("stage_number");
+			box = document.getElementById("box");
+			reload = document.getElementById("reload");
+			wrapper = document.getElementById("wrapper");
+			A = document.getElementById("A");
+			B = document.getElementById("B");
+			C = document.getElementById("C");
+
+
+			objectManager = new ObjectManager();
+			createMap();
+			//createDoor();
+			createHero();
+			createEnemy();
+			setScore();
+			createAudio();
+			setStage();
+			gameLoop();
+		}
+		//HERO
+		function createHero() {
+
+			hero = new Hero("HERO", stage, 50, 300, 40, 40, 0, 0, 0, 0, "", "./game_img/pacmanIMG.gif");
+
+			objectManager.addObject(hero);
+		}
+		//ENEMY
+		function createEnemy() {
+
+			for (var i = 0; i <= 3; i++) {
+				var enemy = new Enemy("ENEMY", stage, 270 * (1 + i), 100 * (1 + i), 40, 40, 0, 0, 0, 0, "", "./game_img/enemy" + i + ".png");
+
+				objectManager.addObject(enemy);
+			}
+		}
+		
+		
+		
+		//HERO
+		function control() {
+			key = event.keyCode;
+			//alert(key);
+			
+			switch (key) {
+				case 37:
+					hero.velX = -3; hero.velY=0;
+					hero.img.style.transform = "scale(-1)";
+					break;
+				case 39:
+					hero.velX = 3;	hero.velY=0;
+					hero.img.style.transform = "scale(1)";
+					break;
+				case 38:
+					hero.velY = -3;	hero.velX=0;
+					hero.img.style.transform = "rotate(270deg)";
+					break;
+				case 40:
+					hero.velY = 3;	hero.velX=0;
+					hero.img.style.transform = "rotate(90deg)";
+					break;
+			}
+		}
+		//ENEMY
+		function randomMove() {
+			randomCount++;
+
+			if (randomCount % 40 == 0) {//console.log(key);
+				for (var i = 0; i < objectManager.objectArray.length; i++) {
+					var enemy = objectManager.objectArray[i];
+					if (enemy.type == "ENEMY") {
+
+						autoKey = getRandomByRange(35, 41)
+
+						switch (autoKey) {
+							case 35: enemy.velX = 0; break;
+							case 36: enemy.velY = 0; break;
+							case 37: enemy.velX = -4; break;
+							case 38: enemy.velY = -4; break;
+							case 39: enemy.velX = 4; break;
+							case 40: enemy.velY = 4; break;
+						}
+					}
+				}
+			}
+		}
+		function stop() {
+
+			if (key == 37 || key == 39) {
+				hero.velX = 0;
+			}
+			if (key == 38 || key == 40) {
+				hero.velY = 0;
+			}
+		}
+		//GameOver
+		function openBox() {
+			box1.style.display = "block";
+			var str = "";
+			str += "SCORE</br>";
+			str += n;
+			str += "<button id='reload' onClick=\"location.href='pac man1.html'\">RE GAME</button>"
+			box1.innerHTML = str;
+		}
+
+		function closeBox() {
+			box.style.display = "none";
+			audio.play();
+		}
+		
+		function reload() {
+			closeBox();
+		}
+		function gameOver() {
+			audio.pause();
+			openBox();
+		}
+		
+		//스코어 변화시 다음화면으로 넘어가는 조건
+		function scoreCheck(){
+			//console.log("===scoreCheck()===");
+			if (n >= 500){
+				
+				//clearTimeout(a);
+				playFlag=false;
+				m++;
+				nextStage();
+				setCount++;
+				
+				//this.pause();
+			}
+
+			if(abcCount>2){
+					//clearTimeout(a);
+					//console.log("나 멈출래요");
+					playFlag=false;
+					alert("abc");
+					m++;
+					nextStage();
+					setCount++;
+					
+					//this.pause();
+					
+				}
+		}
+
+		//모듈화
+		function nextStage() {
+			//오디오 넣을 것
+			box2.style.display = "block";
+			var str = "";
+			str += "SCORE</br>";
+			str += n;
+			str += "<button id='nextStage' onClick='nextBox()'>next Stage</button>";
+			box2.innerHTML = str;
+
+		}
+		//모듈화
+		function nextBox(){
+			createMap();
+			setStage();
+		}
+		
+		//info,등등
+		function setScore() {
+		
+			score_area.innerHTML = n;
+		}
+
+		function setStage() {
+			
+			stage_area.innerHTML = map.stage[m].name;
+		}
+
+		function createAudio() {
+			audio = document.createElement("audio");
+			audio.src = "./audio/gaming.mp3";
+			audio.play();
+			wrapper.appendChild(audio);
+		}
+		function setItem(){
+			
+		}
+		function createMap() {
+		
+			for (var h = 0; h < map.stage[m].frame.length; h++) {
+				for (var w = 0; w < map.stage[m].frame[h].length; w++) {
+					if (map.stage[m].frame[h][w] == 1) {
+						block = new Cell("BLOCK", stage, 50 * w, 50 * h, 50, 50, 0, 0, 0, 0, "", "./game_img/map.png");
+						map.stage[m].frame[h][w] = block;
+						objectManager.objectArray.push(block);
+					
+					}else if (map.stage[m].frame[h][w] == 2) {
+						item = new Item("ITEM", stage, 50 * w, 50 * h, 20, 20, 0, 0, 0, 0, "", "./game_img/coin.png")
+					
+						map.stage[m].frame[h][w] = item;
+						objectManager.objectArray.push(item);
+					
+					}else if(map.stage[m].frame[h][w] == 3){
+						Aitem=new ABCitem("AITEM", stage, 50 * w, 50 * h, 50, 50, 0, 0, 0, 0, "", "./game_img/A.png")
+					
+						map.stage[m].frame[h][w] = Aitem;
+						objectManager.objectArray.push(Aitem);
+					
+
+					}else if(map.stage[m].frame[h][w] == 4){
+						Bitem=new ABCitem("BITEM", stage, 50 * w, 50 * h, 50, 50, 0, 0, 0, 0, "", "./game_img/B.png")
+					
+						map.stage[m].frame[h][w] = Bitem;
+						objectManager.objectArray.push(Bitem);
+					
+					
+					}else if(map.stage[m].frame[h][w] == 5){
+						Citem=new ABCitem("CITEM", stage, 50 * w, 50 * h, 50, 50, 0, 0, 0, 0, "", "./game_img/C.png")
+					
+						map.stage[m].frame[h][w] = Citem;
+						objectManager.objectArray.push(Citem);
+					}
+					
+				}
+			
+			}
+	
+		}
+
+		/*ENEMY의 문
+		function createDoor(){
+			var door=new Cell("DOOR",stage,350,600,50,50,0,0,0,0,"","./map.png");
+			var door1=new Cell("DOOR",stage,350,550,50,50,0,0,0,0,"","./map.png");
+			var door2=new Cell("DOOR",stage,400,550,50,50,0,0,0,0,"","./map.png");
+			var door3=new Cell("DOOR",stage,450,550,50,50,0,0,0,0,"","./map.png");
+			var door4=new Cell("DOOR",stage,500,550,50,50,0,0,0,0,"","./map.png");
+			var door5=new Cell("DOOR",stage,500,550,50,50,0,0,0,0,"","./map.png");
+			var door6=new Cell("DOOR",stage,550,550,50,50,0,0,0,0,"","./map.png");
+			var door7=new Cell("DOOR",stage,550,600,50,50,0,0,0,0,"","./map.png");
+		
+		
+			objectManager.addObject(door);
+			objectManager.addObject(door1);
+			objectManager.addObject(door2);
+			objectManager.addObject(door3);
+			objectManager.addObject(door4);
+			objectManager.addObject(door5);
+		}*/
+
+		
+		
+		function gameLoop() {
+			objectManager.tick();
+			objectManager.render();
+			//autoControl();
+			randomMove();
+			scoreCheck();
+
+			if(playFlag){
+				a = setTimeout("gameLoop()", 10);
+			}
+		}
+
+		addEventListener("load", function () {
+			init();
+		})
+
+	</script>
+</head>
+
+<body onKeyDown="control()" >
+
+	<div id="wrapper">
+		<div id="stage">
+			<div id="box1">
+				<button id="reload" onClick="reload()">RE GAME</button>
+			</div>
+			<div id="box2">
+				<button id="nextStage" onClick="nextBox()">next Stage</button>
+			</div>
+		</div>
+		<div class="info">
+			<h1>SCORE</h1>
+			<div id="score_area">점수</div>
+			<h1>STAGE</h1>
+			<div id="stage_area">스테이지</div>
+			<h1>ITEM</h1>
+			<div id="ABCITEM">
+				<div id="A"></div>
+				<div id="B"></div>
+				<div id="C"></div>
+			</div>
+			</form>
+			<form action="./pac man option.html">
+				<button id="back">EXIT</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

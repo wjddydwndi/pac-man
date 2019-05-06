@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>게임설명</title>
+<style>
+*{
+	margin:auto;
+	background:#000;
+}
+#wrapper{
+	width:900px;
+	height:700px;
+	background:#000;
+	position:relative;
+	top:100px;
+	
+}
+#box{
+	width:400px;
+	height:300px;
+	background:#000;
+	position:relative;
+	top:100px;
+	background:#000;
+	float:left;
+}
+#title{
+	width:100%;
+	height:100px;
+	line-height:100px;
+	background:#000;;
+	font-size:60px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	opacity:0.2;
+}
+#detail{
+	width:400px;
+	height:200px;
+	background:#666;
+	position:absolute;
+	
+	border-radius:50px;
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	
+}
+#img{
+	width:350px;
+	height:200px;
+	position:absolute;
+	left:500px;
+	top:300px;
+	background:url("./game_img/introduce.png");
+	
+}
+#back{
+	width:100px;
+	height:100px;
+	border-radius:30px;
+	background:#fff;
+	color:#000;
+	position:absolute;
+	left:900px;
+	top:500px;
+	
+	
+
+}
+</style>
+<script>
+function init(){
+	var detail=document.getElementById("detail");
+	var back=document.getElementById("back");
+	var wrapper=document.getElementById("wrapper");
+
+	back.addEventListener("mouseover",function(){
+		back.style.background="#f7fdb9";
+		back.style.color="#000";
+	});
+
+	back.addEventListener("mouseout",function(){
+		back.style.background="#666";
+		back.style.color="#fff";
+	});
+
+	detail.innerHTML=
+	"<br>기존의 PAC MAN 이라는 게임을 모티브로 만들었다.<br>"
+	+"유령들을 피해다니며, 열심히 점수를 모은다"+
+	"점수가 600점이 넘으면 분노하여 유령들을 해치운다"
+
+	
+	createAudio();
+}
+function createAudio(){
+	var audio=document.createElement("audio");
+	audio.src="./audio/option.mp3";
+	audio.play();
+	wrapper.appendChild(audio);
+}
+
+addEventListener("load",function(){
+	init();
+});
+</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="box">
+			<div id="title">게임설명</div>
+		
+			<div id="detail"></div>
+		</div>
+			<div id="img"></div>
+		<form action="./pac man option.html">
+			<button id="back">BACK</button>
+		</form>
+	</div>	
+</body>
+</html>

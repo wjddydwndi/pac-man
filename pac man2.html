@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>pac man1</title>
+<style>
+*{	margin:auto;
+	background:#000;
+	}
+#wrapper{
+	width:1500px;
+	height:700px;
+	background:yellow;
+	position:relative;
+	top:100px;
+}
+#stage{
+	width:1300px;
+	height:100%;
+	background:#000;
+	position:relative;
+	float:left;
+	font-size:0px;
+}
+#box1{
+	width:1000px;
+	height:619px;
+	line-height:150px;
+	position:absolute;
+	left:200px;
+	background:url("./game_img/gameover.jpg");
+	opacity:0.9;
+	display:none;
+	z-index:7;
+	font-size:50px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+	border-radius:100px;
+}
+#box2{
+	width:1000px;
+	height:619px;
+	line-height:150px;
+	position:absolute;
+	left:200px;
+	background:#000;
+	opacity:0.9;
+	display:none;
+	z-index:7;
+	font-size:50px;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+	border-radius:100px;
+}
+#reload{
+	width:300px;
+	height:100px;
+	border-radius:10px;
+	background:#000;
+	position:absolute;
+	font-size:50px;
+	color:#fff;
+	top:500px;
+	left:350px;
+#nextStage{
+	width:300px;
+	height:100px;
+	border-radius:10px;
+	background:#000;
+	position:absolute;
+	font-size:50px;
+	color:#fff;
+	top:500px;
+	left:350px;
+}
+}
+.info{
+	width:200px;
+	height:700px;
+	background:#000;
+	float:left;
+	font-size:30px;
+	color:#fff;
+}
+.info div{
+	width:198px;
+	height:100px;
+	line-height:100px;
+	background:#666;
+	border:2px solid #fff;
+	font-size:40px;
+	font-weight:bold;
+	text-align:center;
+}
+#empty{
+	width:200px;
+	height:230px;
+	background:#000;
+	border:0px;
+}
+#txt{
+	width:200px;
+	height:30px;
+	background:#fff;
+}
+#back{
+	width:200px;
+	height:100px;
+	color:#fff;
+	font-size:50px;
+	font-weight:bold;
+	text-align:center;
+}
+</style>
+<script src="./JS/ObjectManager.js"></script>
+<script src="./JS/GameObj.js"></script>
+<script src="./JS/Cell.js"></script>
+<script src="./JS/Hero.js"></script>
+<script src="./JS/Sensor.js"></script>
+<script src="./JS/Enemy.js"></script>
+<script src="./JS/Item.js"></script>
+<script src="./JS/CreateItem.js"></script>
+<script src="./JS/common.js"></script>
+<script src="./JS/frames.js"></script>
+
+<!-- <script src="./super.js"></script> -->
+<script>
+var map=[
+[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+[1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,1,1,1,1,0,0,0,0,0,1],
+[1,0,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1],
+[1,0,1,0,1,0,0,1,0,1,1,1,0,1,1,1,1,0,1,0,0,1,1,1,0,1],
+[1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1],
+[1,0,1,0,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1],
+[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,0,0],
+[0,0,1,0,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,1,0,0],
+[1,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1],
+[1,0,0,0,1,0,0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,1,0,0,0,1],
+[1,0,1,0,1,0,0,1,1,1,1,1,0,0,0,1,0,0,1,1,1,1,0,0,0,1],
+[1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,1],
+[1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
+[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+];
+
+var hero;
+var key;//HERO
+var stage;
+var score;
+var stage_number;
+var blockArray=[];
+var objectManager;
+var autoKey=0;//Enemyaaaaa
+var block;
+var item;
+var itemArray=[];
+var n=0;//score
+var box;
+var reload;
+var audio;
+var audioP;
+var randomCount=0;//Enemy
+var wrapper;
+
+function init(){
+	stage=document.getElementById("stage");
+	score=document.getElementById("score");
+	stage_number=document.getElementById("stage_number");
+	box=document.getElementById("box");
+	reload=document.getElementById("reload");
+	wrapper=document.getElementById("wrapper");
+
+	objectManager=new ObjectManager();
+	createMap();
+	//createDoor();
+	createHero();
+	createEnemy();
+	createItem();
+	setScore();
+	createAudio();
+	setStage();
+	gameLoop();
+}
+//HERO
+function createHero(){
+	
+	hero=new Hero("HERO",stage,5,340,30,30,0,0,0,0,"","./game_img/hero1.png");
+	
+	objectManager.addObject(hero);
+}
+//ENEMY
+function createEnemy(){
+	
+
+	var enemy=new Enemy("ENEMY",stage,300,50,40,40,0,0,0,0,"","./game_img/enemy.png");
+	
+	var enemy2=new Enemy("ENEMY",stage,450,600,40,40,0,0,0,0,"","./game_img/enemy1.png");
+	
+	var enemy3=new Enemy("ENEMY",stage,1000,50,40,40,0,0,0,0,"","./game_img/enemy2.png");
+	
+	var enemy4=new Enemy("ENEMY",stage,500,300,40,40,0,0,0,0,"","./game_img/enemy3.png");
+	
+/*	enemyArray.push(emeny);
+	enemyArray.push(emeny2);
+	enemyArray.push(emeny3);
+	enemyArray.push(emeny4);
+*/
+
+	objectManager.addObject(enemy);
+	objectManager.addObject(enemy2);
+	objectManager.addObject(enemy3);
+	objectManager.addObject(enemy4);
+}
+//HERO
+function control(){
+	key=event.keyCode;
+	
+	switch(key){
+		case 37:
+			hero.velX=-3;
+			hero.img.style.transform="scale(-1)";
+		break;
+		case 39:
+			hero.velX=3;
+			hero.img.style.transform="scale(1)";
+		break;
+		case 38:
+			hero.velY=-3;
+			hero.img.style.transform="rotate(270deg)";
+		break;
+		case 40:
+			hero.velY=3;
+			hero.img.style.transform="rotate(90deg)";
+		break;
+	}
+}
+//ENEMY가 자동으로 움직이게 함.
+
+function autoControl(){
+	for(var i=0; i<objectManager.objectArray.length; i++){
+		var obj=objectManager.objectArray[i]
+		if(obj.type=="ENEMY"){
+			autoKey=getRandomByRange(35,41)
+			switch(autoKey){
+				case 35:obj.velX=0;break;
+				case 36:obj.velY=0;break;
+				case 37:obj.velX=-2;break;
+				case 38:obj.velX=2;break;
+				case 39:obj.velY=-2;break;
+				case 40:obj.velY=2;break;
+			}
+		}
+	}
+}
+
+
+/*---------------------------------------------------------------
+key 값을 조정하여 적군을 램덤하게 움직인다
+---------------------------------------------------------------*/
+
+/*function randomMove(){
+	randomCount++;
+
+	if(randomCount%25==0){
+		var r=getRandomByRange(35,41);
+		//생성된 모든 적군을 대상으로 새로운 autoKey값을 방송한다
+		for(var i=0;i<objectManager.objectArray.length;i++){
+
+			var en=objectManager.objectArray[i];
+			if(en.type=="ENEMY"){
+				en.autoKey=r;
+			}
+		}
+	}
+}*/
+function randomMove(){
+	randomCount++;
+
+	if(randomCount%30==0){
+		autoKey=getRandomByRange(35,41);
+		//console.log(key);
+	}
+}
+function stop(){
+
+	if(key==37 || key==39){
+		hero.velX=0;
+	}	
+	if(key==38 || key==40){
+		hero.velY=0;
+	}
+}
+//GameOver
+/*function openBox(){
+	box.style.display="block";
+	var str="";
+	str+="SCORE</br>";
+	str+=n;
+	str+="<button id='reload' onClick=\"location.href='pac man1.html'\">RE GAME</button>"
+	box.innerHTML=str;
+}
+*/
+function closeBox(){
+	box.style.display="none";
+	audio.play();
+}
+
+function reload(){
+	closeBox();
+}
+function gameOver(){
+	audio.pause();
+	openBox();
+}
+function nextStage(){
+	//오디오 넣을 것
+	box.style.display="block";
+	var str="";
+	str+="SCORE</br>";
+	str+=n;
+	str+="<button id='nextStage' onClick=\"location.href='pac man2.html'\">next Stage</button>";
+	box.innerHTML=str;
+}
+//info,등등
+function setScore(){
+	score_area.innerHTML=n;
+}
+
+function setStage(){
+	stage_area.innerHTML="STAGE 1";
+}
+
+function createAudio(){
+	audio=document.createElement("audio");
+	audio.src="./audio/gaming.mp3";
+	//audio.play();
+	wrapper.appendChild(audio);
+}
+
+function createMap(){
+	for(var h=0; h<map.length; h++){
+		for(var w=0; w<map[h].length; w++){
+			if(map[h][w]==1){
+				block=new Cell("BLOCK",stage,50*w,50*h,50,50,0,0,0,0,"","./game_img/map.png");
+			}
+				map[h][w]=block;
+				objectManager.objectArray.push(block);
+		}
+	}
+}
+/*ENEMY의 문
+function createDoor(){
+	var door=new Cell("DOOR",stage,350,600,50,50,0,0,0,0,"","./map.png");
+	var door1=new Cell("DOOR",stage,350,550,50,50,0,0,0,0,"","./map.png");
+	var door2=new Cell("DOOR",stage,400,550,50,50,0,0,0,0,"","./map.png");
+	var door3=new Cell("DOOR",stage,450,550,50,50,0,0,0,0,"","./map.png");
+	var door4=new Cell("DOOR",stage,500,550,50,50,0,0,0,0,"","./map.png");
+	var door5=new Cell("DOOR",stage,500,550,50,50,0,0,0,0,"","./map.png");
+	var door6=new Cell("DOOR",stage,550,550,50,50,0,0,0,0,"","./map.png");
+	var door7=new Cell("DOOR",stage,550,600,50,50,0,0,0,0,"","./map.png");
+
+
+	objectManager.addObject(door);
+	objectManager.addObject(door1);
+	objectManager.addObject(door2);
+	objectManager.addObject(door3);
+	objectManager.addObject(door4);
+	objectManager.addObject(door5);
+}*/
+
+
+
+function gameLoop(){
+
+	objectManager.tick();
+	objectManager.render();
+	//autoControl();
+	randomMove();
+	setTimeout("gameLoop()",20);
+}
+
+addEventListener("load",function(){
+	init();
+})
+
+</script>
+</head>
+<body onKeyDown="control()"	onKeyUp="stop()">
+
+	<div id="wrapper">
+		<div id="stage">
+			<div id="box1">
+				<button id="reload" onClick="reload()">RE GAME</button>
+			</div>
+			<div id="box2">
+				<button id="nextStage" onClick="nextStage()">next Stage</button>
+			</div>
+		</div>
+		<div class="info">
+			<h1>SCORE</h1>
+			<div id="score_area">점수</div>
+			<h1>STAGE</h1>
+			<div id="stage_area">스테이지</div>
+			<div id="empty"></div>
+			</form>
+			<form action="./pac man option.html">
+				<button id="back">EXIT</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
