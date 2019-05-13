@@ -7,22 +7,77 @@
 <br>-count를 이용한 애니메이션 처리
 <br>-GameObj.js , ObjectManager.js를 이용하여, 객체 관리
 .................................................
+ 프로젝트 기간 : 2018. 12. 11 ~ 2018.12.15
 </h3>
 
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfNTcg/MDAxNTU3MTY2NDcyNTkw.kVU2XZk9ukVTn9ta8ROzwysjaL9X5oYjeEanvs30Hpcg.sIXRgPXXmpRfTzzRP5ykRgFQoLfk5mMuNn79ppt0S-Ag.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMjIx/MDAxNTU3MTY2NDc5MDI3.L3YOIkWA6EsvKOSW40pHx0oAxTYzID-yXcQa7JcQv-0g.jgBLBcF_-mlmojsmdDibOf95rzCKkFADtJFAmPjdtggg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMjM5/MDAxNTU3MTY2NDkxNTU0.8nYiVG7ebzvjbU5BQi4ifPc7YocuY87OYJK_ECqCfNsg.1hsZHyUgmvNyxNPG7MlUW8GqFh9mKnCOkN4-pMdLGdMg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMjA5/MDAxNTU3MTY2NDk4MjIw.3kVM-KzdQcQ6TWaulgmErl2Y2KCk_eM7sM2Bg7Q_eBAg.VmRTzkLTtvsrwj5fOjYfUIzqKPK7T2Wbu8LrnelC_cMg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMTUz/MDAxNTU3MTY2NTA2NzMw.OJlatD1jDWwrv60bttHpPsERABMtv_3dP_YZNz5tA5Ag.-vxh2_gPDpJA8T8CgeJmri_ckwMZAgCkmKwlcVX7vC0g.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfNjUg/MDAxNTU3MTY2NTE1NDk3._X_P0vEZgwxjfDmMbzalLRoX-1fgHkjzevQ5mfo7T34g.9G-uyKaCcIhn9zbPxSzNOHITQclrLVsns8WJc4X1TQkg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMjQy/MDAxNTU3MTY2NTIyODA2.2zQOGmY8SAnGPbzMkzBABMUOE2kAO5tjA855m4yFrdsg.iDet2f-SKGpZ9ElsbsvjT_qnSgAKvILCkocgGYk6_pQg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfNDEg/MDAxNTU3MTY2NTMwNDMx.IhkKI8RhD8nIb7WIMByBhYbkDFeE9KgZ5jWGOojpb3Mg.bzlIPQ5HzjJLX9lr-C9S3GvySr6UZHm8Y9DFtE8Lbhog.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfNzcg/MDAxNTU3MTY2NTM4MjMy.fw9sqeiTkVfnzJDjvzJ87WfDNZZ992oMLibmZTWX6Mgg.kRnXIjpLglpWsYjPKNqE_Na7qpzy-OaNyRuxMmL9ROEg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMTg4/MDAxNTU3MTY2NTQ1MDQ5.Hzl4d6CQddj0SF624UqJYC5B7j16lIh1YcNWXcxgOuIg.O0aLknUmy0LmqyVhOVZkRp7O3SRsSADMw75e-K13hIAg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfNTAg/MDAxNTU3MTY2NTUyMDEz.YtDsjrtik6lrMCQs1xCslvlpH3bl0ftnWcpOZ0Y0hxQg.Px1rdgCcwofZxXlFkv2toPFurpOZSM6mUgwz-3oMoU0g.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfODQg/MDAxNTU3MTY2NTU5MDA1.G1MOBUNTWt8LxrbFEEDXFryfL8kx39IVJuhKJ20Py0og.uW-gYhru1ozKyIHERNoKYAkl8g6yiq3p7NN4lmesHJgg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMzQg/MDAxNTU3MTY2NTY3Njgw.tnO02YdcELwRQhlUHOj5IJGUSg5IDOoaduqALyc8Rmsg.Wz40PVm4CwQfNZPcTwhAS1Fo1S2WpW968UbEwGv378Ig.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfMTE3/MDAxNTU3MTY2NjE4MzE1.fkB96NEgNn8jfOC9YmtJRT0nWtTC8-8iPplBkROYPTcg.jNqQn0F2ZkoYPSNLkszQdQkzb6eVwK2X5UfooC2Lgycg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MDdfNDYg/MDAxNTU3MTY2NjM4OTA1.E7x14lwIQDzHACNXDe9LJhbQf1nzsGz0_x6M88RAjRgg.a53r-dDN-ZlFx--Z2paLiEYer_0W5NeZ9ZP-zVW8ULcg.PNG.wjddydwndi/image.png?type=w773">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTA0/MDAxNTU3NzE0NDQ3MDY3.xNy6VUKCnGk6GW1j6e0DVC7mCnhnAmsEVe1AykGjKp8g.K9vTD8_FIu5ZPBHNjQdlQJqRlbnOeUy6gkflZlZ1bOYg.PNG.wjddydwndi/image.png?type=w773">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjMw/MDAxNTU3NzE0NDU1NzU3.PQgFjQOZVE3hKsigo0ucM1mUyl3OxeiFzgxZe0V3LS4g.TC4ZPo1EcbENe4mPkMKhwKCtEcjKytMC6IDxhmqy3tgg.PNG.wjddydwndi/image.png?type=w773">
+
+<h2> 프로젝트 설명 </h2>
+<br>
+		<p style="text-align:center">	주요 기능 설명</p>
+<br>
+1. 오디오 기능을 이용한, 전체적으로 배경음악 재생
+<br>
+2. 전체 객체들의 추가, 제거 등을 관리할 수 있는 JS를 만들어 객체들을 관리하였다.
+<br>
+3. GameObj 를 만들어 전체 객체들이 상속받을 수 있게 하였다.
+	 (객체들의 크기, 이미지, 움직임 등을 정의함.)
+<br>
+4. 객체 들에게 충돌 처리 센서를 부착시켜, 충돌 처리를 하였다.
+<br>
+5. Key를 누를 때, Count를 증가시켜, 애니메이션 효과를 주었다.
+<br>
+6. 랜덤 함수를 만들어, 적군들이 자동으로 움직일 수 있도록 처리하였다.
+<br>
+7. 각 셀(맵의 벽돌)들을 객체취급하여, 이미지와, 크기를 지정하였다.
+<br>
+8. JSON을 이용하여, 맵을 구성.
+<br>
+9. setTimeout 을 사용하여, 게임이 돌아갈 수 있는 환경을 만들었다.
+<br>
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjk1/MDAxNTU3NzE0NTY2MzUx.wUb7vSx0QVchn7FYLvODWxoio3X5odAZz9JyxXrcIcgg.UEO4L0xS5H5vbt9LfcXBEGZXQGtnF6DVk3qONfJCVJ0g.PNG.wjddydwndi/image.png?type=w773">
+<br>
+마우스의 커서가 버튼에 올라가면, 색이 변하도록 처리
+<br>
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjcx/MDAxNTU3NzE0NjA4MDQ1.eOIgteKpqzmlyZ9iy2-VYtSNrv4fX50ovqzhaen5F4Yg.YKLrDrdt0H4yeHuxzHlbpkEBGEqg7g854gc0I4fSRwog.PNG.wjddydwndi/image.png?type=w773">
+<br>
+
+Ⓐ 캐릭터가 이동하면서 동전을 획득할 때마다 ⓑ의 스코어가 올라간다.
+- 동전 객체와 캐릭터간 충돌처리를 통해 배열에 담겨있던 동전을 하나씩 제거한다.
+- If문을 통해 동전 객체와 캐릭터간 충돌한다면, SCORE를 증가시켰다.
+ⓒ 현재 진행중인 스테이지를 표시했다.
+
+<br>
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjg2/MDAxNTU3NzE0NjM1MjYz.jB_n7RFNzRDwx7W1WQfeB1GNhAIp8illl3g8QSaSnHwg.Sw0UcDRPVt59WB1lu61f3hgiATdjrYpIDN7G4SRL384g.PNG.wjddydwndi/image.png?type=w773">
+<br>
+Ⓐ 캐릭터가 이동하면서 동전을 획득하여, ⓑ 일정 SCORE를 얻게 되면, ⓐ캐릭터의 색이 변화하고, 
+이동속도가 증가한다.
+일정 SCORE에 도달하면, 다음 스테이지로 넘어갈 수 있다.
+-동전 객체들과 캐릭터간의 충돌 처리를 통해, ⓑ가 증가할 수 있도록 하였다.
+-If문을 이용하여, ⓑ의 수치가 일정 수에 도달하면 색을 변화시키고, 
+-한번에 움직일 수 있는 수치를 증가시켰다.
+
+<Br>
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTU3/MDAxNTU3NzE1MTQwNjA5.qM6Me2UIy1K-1wOr1snX9zig_56_ZFGfpzz8-IThnWwg.AAQd1J2a6Qizbsv5aeeUg4JsPZG4zqZlyVO3MoDImWMg.PNG.wjddydwndi/image.png?type=w773">
+<br>
+캐릭터가 ⓐ의 아이템을 획득한다면, ⓑ처럼 해당 아이템이 표시된다.
+A,B,C아이템을 모두 획득한다면, 다음 스테이지로 넘어갈 수 있다.
+- Ⓐ와 캐릭터간의 충돌 처리를 하여, 충돌 시 ⓑ에 표시되도록 하였다.
 
 
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
+<img src="">
