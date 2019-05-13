@@ -17,18 +17,20 @@
 <p>1. 오디오 객체를 적용한 배경음 처리.</p>
 <p>2. 게임에 등장하는 객체들을 관리할 ObjectManager 정의.</p>
 
-<p>3. GameObj 를 정의하여, 모든 게임 관련 객체들은 최상위 클래스인 GameObj의 tick,render를 override한다.</p>
-	 * 객체들의 크기, 이미지, 움직임 등을 정의함.<br><br><br>
-<p>4. 객체 들에게 충돌 처리 센서를 부착시켜, 충돌 처리를 하였다.</p>
-<p>5. Key를 누를 때, Count를 증가시켜, 애니메이션 효과를 주었다.</p>
-<p>6. 랜덤 함수를 정의하여, 적군들이 자동으로 움직일 수 있도록 처리하였다.</p>
-<p>7. 각 셀(맵의 벽돌)들을 객체로 정의하여, 이미지와, 크기를 지정하였다.</p>
+<p>3. GameObj 를 정의하여, 모든 게임 관련 객체들은 최상위 클래스인 GameObj의 tick,render를 Override.</p>
+	 * 객체들의 크기, 이미지, 움직임 등을 정의.<br><br><br>
+<p>4. Sensor.js와 hitTest함수를 정의하여, 충돌처리.</p>
+<p>5. 키보드 이벤트를 이용한, 애니메이션 처리.</p>
+<p>6. 랜덤 함수를 정의하여, 적군들의 움직임 정의.</p>
+<p>7. 각 셀(맵의 벽돌)들을 객체로 정의하여, 이미지,사이즈 지정.</p>
 <p>8. JSON을 이용하여, 맵을 구성.</p>
 <p>9. setTimeout을 활용한, GameLoop의 구현</p>
+<p>10. Modal PopUp을 이용한 결과 출력 
 <br>
 <br>
 <br>
-<p> 게임 진행 화면 </p>
+<h2> 게임 진행 화면 </h2>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTEy/MDAxNTU3Nzc4OTU1NDgz.dX6h0nPOipE-17OcaoIK1gZHQNZv_ducGS1FgzxwpGcg.bhppE04RHEyUHMChDXW3gdZDPSath49DMVGOVJQZykog.PNG.wjddydwndi/2.png?type=w773" width="100%">
+
 
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTY3/MDAxNTU3Nzc4OTU1NTg3.OqPDskBwMG6Nu8rhpaYHp7FX7OAfjGQBPjRs-hBmgywg.wBl9P8DZFfhg3WVqGiATnhbuMq-2YsqDGoTX-aI4m4Ig.PNG.wjddydwndi/3.png?type=w773" width="100%">
