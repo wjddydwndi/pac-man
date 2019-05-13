@@ -30,7 +30,9 @@
 <br>
 <br>
 <h2> 게임 진행 화면 </h2>
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTEy/MDAxNTU3Nzc4OTU1NDgz.dX6h0nPOipE-17OcaoIK1gZHQNZv_ducGS1FgzxwpGcg.bhppE04RHEyUHMChDXW3gdZDPSath49DMVGOVJQZykog.PNG.wjddydwndi/2.png?type=w773" width="100%">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjg5/MDAxNTU3NzgwMjE2MjIy.I8745lH0xdVIeCXVhGdjmZNKs63uD8Ea1rXohUev-4sg.P_L_m-InStoHOq0ATNFd41PWNgcDz-KRt5IC01Cg_d8g.PNG.wjddydwndi/00.png?type=w773" width="100%">
+
+1.
 
 
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTY3/MDAxNTU3Nzc4OTU1NTg3.OqPDskBwMG6Nu8rhpaYHp7FX7OAfjGQBPjRs-hBmgywg.wBl9P8DZFfhg3WVqGiATnhbuMq-2YsqDGoTX-aI4m4Ig.PNG.wjddydwndi/3.png?type=w773" width="100%">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTM0/MDAxNTU3Nzc5OTk4MDIx.HrbVc0MvswTjnz8r3k7ugyM8QC2isnLyBXyq08Sl4X4g.3HScl4rulrgQ_DoswZ9u13R_PmpgBFvQfeMBgX5Am7kg.PNG.wjddydwndi/4.png?type=w773" width="100%">
