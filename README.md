@@ -25,29 +25,29 @@
 
 <h3>[ 디자인 ]</h3>
 <p>
-<p>(1) 게임스테이지 정보를 가진 JSon을 map.js로 정의하여 유지보수성 고려</p>
-<p>() Modal PopUp을 이용한 결과 출력</p>
+<p> (1) 게임스테이지 정보를 가진 JSon을 map.js로 정의하여 유지보수성 고려</p>
+<p>
 <h3>[ 게임 오브젝트 처리 ]</h3>
 <p>
-  <p>(2)</p>
-  <p>
-    <p>- 게임에 사용되는 모든 객체들의 등장 및 제거를 처리하는 ObjectManager 클래스 정의</p>
-    <p>- 객체마다 고유한 속성을 인스턴스 생성시 클래스의 생성자 인수로 처리</p>
-    <p>- 키보드 이벤트를 이용한 캐릭터의 이동 설정</p>
-    <p>- 랜덤 함수를 정의하여, 적군들의 움직임 정의</p>
-    <p>- Sensor.js와 hitTest함수를 정의하여, 충돌처리</p>
-    <p>- 키보드 이벤트를 이용한, 애니메이션 처리.</p></p> 
+<p> (2)</p>
+<p>
+<p>   - 게임에 사용되는 모든 객체들의 등장 및 제거를 처리하는 ObjectManager 클래스 정의</p>
+<p>   - 객체마다 고유한 속성을 인스턴스 생성시 클래스의 생성자 인수로 처리</p>
+<p>   - 키보드 이벤트를 이용한 캐릭터의 이동 설정</p>
+<p>   - 랜덤 함수를 정의하여, 적군들의 움직임 정의</p>
+<p>   - Sensor.js와 hitTest함수를 정의하여, 충돌처리</p>
+<p> (3) 키보드 이벤트를 이용한, 애니메이션 처리.</p></p> 
 <h3>[ 게임 LOOP ]</h3>
-    <p>
-    <p>- setTimeout 메서드로 GameLoop 구현
-    <p>- 모든 객체들의 공통 기능은 최상위 클래스인 GameObject의 tick, render 메서드로 정의하여 하위 객체들이 재정의 할 수 있도록 설계</p>
+<p>
+<p>   - setTimeout 메서드로 GameLoop 구현
+<p>   - 모든 객체들의 공통 기능은 최상위 클래스인 GameObject의 tick, render 메서드로 정의하여 하위 객체들이 재정의 할 수 있도록 설계</p>
 <h3>**</h3>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTM0/MDAxNTU3Nzc5OTk4MDIx.HrbVc0MvswTjnz8r3k7ugyM8QC2isnLyBXyq08Sl4X4g.3HScl4rulrgQ_DoswZ9u13R_PmpgBFvQfeMBgX5Am7kg.PNG.wjddydwndi/4.png?type=w773" width="100%">
 <p>
-   <p>(3)</p>
-    <p>
-    <p>- Modal PopUp을 이용한 결과 출력</p>
-    <p>- 오디오 객체를 적용한 배경음 처리.</p>
+<p> (3)</p>
+<p>
+<p>   - Modal PopUp을 이용한 결과 출력</p>
+<p>   - 오디오 객체를 적용한 배경음 처리.</p>
 <p>
 <p>
 <h2> 주요 코드 정리 </h2>
