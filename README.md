@@ -30,4 +30,4 @@
 <br>
 <br>
 <p> 게임 진행 화면 </p>
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjA2/MDAxNTU3Nzc4NDY2MjUx.SW7Kafk1tiirZvRXAIt5OU7BOY4hkMPGzTStjMyG5hog.HSguZo-7TVT07m6-Ee4VZj-Dw0HyzUHEB5Fybjxku9Ug.PNG.wjddydwndi/00.png?type=w773">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjA2/MDAxNTU3Nzc4NDY2MjUx.SW7Kafk1tiirZvRXAIt5OU7BOY4hkMPGzTStjMyG5hog.HSguZo-7TVT07m6-Ee4VZj-Dw0HyzUHEB5Fybjxku9Ug.PNG.wjddydwndi/00.png?type=w773" width="100%">
