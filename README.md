@@ -1,5 +1,5 @@
 <br><br>
-<p> 게임 프레임 웍을 활용한 Pac-Man
+<h1> 게임 프레임 웍을 활용한 Pac-Man</h1>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTI3/MDAxNTU3Nzc3NzkyMDk5.IQzQsF4YArmWS_q1KIZvIXGvRTZcti7V2HGXOzEE6z4g.wMxUy7qlzy8drvoJsCL9s1fOUvb-zGnpIU-CXwc05Nsg.PNG.wjddydwndi/1.png?type=w773" width="100%">
 <br>
 <br>
