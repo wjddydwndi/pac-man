@@ -9,16 +9,7 @@
 <p>개발 툴		  :  EditPlus</p>
 <p>개발 기술 	  : javascript , css, html</p>
 <p>프로젝트 기간	:  2018. 12. 11 ~ 2018.12.15</p>
-<br><br><br>
-<h2> 상세 설명 </h2>
-<br>
-<br>
-<br>
-
-
-<br>
-<br>
-<br>
+<br><br><br><br>
 <h2> 게임 진행 화면 </h2>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjg5/MDAxNTU3NzgwMjE2MjIy.I8745lH0xdVIeCXVhGdjmZNKs63uD8Ea1rXohUev-4sg.P_L_m-InStoHOq0ATNFd41PWNgcDz-KRt5IC01Cg_d8g.PNG.wjddydwndi/00.png?type=w773" width="100%">
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTM0/MDAxNTU3Nzc5OTk4MDIx.HrbVc0MvswTjnz8r3k7ugyM8QC2isnLyBXyq08Sl4X4g.3HScl4rulrgQ_DoswZ9u13R_PmpgBFvQfeMBgX5Am7kg.PNG.wjddydwndi/4.png?type=w773" width="100%">
@@ -48,8 +39,7 @@
 <p>
 <p>   - Modal PopUp을 이용한 결과 출력</p>
 <p>   - 오디오 객체를 적용한 배경음 처리.</p>
-<p>
-<p>
+<br><br><br>
 <h2> 주요 코드 정리 </h2>
 <p>
 <h3>GameObject</h3>
