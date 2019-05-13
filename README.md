@@ -41,7 +41,7 @@
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjk1/MDAxNTU3NzE0NTY2MzUx.wUb7vSx0QVchn7FYLvODWxoio3X5odAZz9JyxXrcIcgg.UEO4L0xS5H5vbt9LfcXBEGZXQGtnF6DVk3qONfJCVJ0g.PNG.wjddydwndi/image.png?type=w773">
 마우스의 커서가 버튼에 올라가면, 색이 변하도록 처리
-<br>-------------------------------------------------------------------------
+<br>-----------------------------------------------------------------------------------------
 <br>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjcx/MDAxNTU3NzE0NjA4MDQ1.eOIgteKpqzmlyZ9iy2-VYtSNrv4fX50ovqzhaen5F4Yg.YKLrDrdt0H4yeHuxzHlbpkEBGEqg7g854gc0I4fSRwog.PNG.wjddydwndi/image.png?type=w773">
@@ -49,7 +49,7 @@
 - 동전 객체와 캐릭터간 충돌처리를 통해 배열에 담겨있던 동전을 하나씩 제거한다.
 - If문을 통해 동전 객체와 캐릭터간 충돌한다면, SCORE를 증가시켰다.
 ⓒ 현재 진행중인 스테이지를 표시했다.
-<br>-------------------------------------------------------------------------
+<br>------------------------------------------------------------------------------------------
 <br>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjg2/MDAxNTU3NzE0NjM1MjYz.jB_n7RFNzRDwx7W1WQfeB1GNhAIp8illl3g8QSaSnHwg.Sw0UcDRPVt59WB1lu61f3hgiATdjrYpIDN7G4SRL384g.PNG.wjddydwndi/image.png?type=w773">
@@ -59,14 +59,14 @@
 -동전 객체들과 캐릭터간의 충돌 처리를 통해, ⓑ가 증가할 수 있도록 하였다.
 -If문을 이용하여, ⓑ의 수치가 일정 수에 도달하면 색을 변화시키고, 
 -한번에 움직일 수 있는 수치를 증가시켰다.
-<br>-------------------------------------------------------------------------
+<br>------------------------------------------------------------------------------------------
 <br>
 <Br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTU3/MDAxNTU3NzE1MTQwNjA5.qM6Me2UIy1K-1wOr1snX9zig_56_ZFGfpzz8-IThnWwg.AAQd1J2a6Qizbsv5aeeUg4JsPZG4zqZlyVO3MoDImWMg.PNG.wjddydwndi/image.png?type=w773">
 캐릭터가 ⓐ의 아이템을 획득한다면, ⓑ처럼 해당 아이템이 표시된다.
 A,B,C아이템을 모두 획득한다면, 다음 스테이지로 넘어갈 수 있다.
 - Ⓐ와 캐릭터간의 충돌 처리를 하여, 충돌 시 ⓑ에 표시되도록 하였다.
-<br>-------------------------------------------------------------------------
+<br>------------------------------------------------------------------------------------------
 <br>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjM1/MDAxNTU3NzE1MTY0Njk5.1P9Cz2XsP5YUMq1owxuoCEh6epRV4-e5O2JxUCMexiMg.sTODucRMU90FwTvEwddDg6ar-GUi0sa--oEz1OwBeu8g.PNG.wjddydwndi/image.png?type=w773">
@@ -75,7 +75,7 @@ A,B,C아이템을 모두 획득한다면, 다음 스테이지로 넘어갈 수 �
 - 객체 들에게 각각 충돌 처리를 하여, 벽과 캐릭터와 충돌 시 체크하도록 하였다.
 - 캐릭터와 충돌 시 그대로 게임은 끝나게 되고, 벽과 충돌 시 방향을 전환하여, 
 - 다른 곳으로 움직이게 하였다.
-<br>-------------------------------------------------------------------------
+<br>------------------------------------------------------------------------------------------
 <br>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjYx/MDAxNTU3NzE1MTg0Mzg3.QlTicrXbTquMhs1mXC6R-JVSja0mYBdDH8jeFMH_wtgg.8MDlyY5X49NK1d0JhwtNGq0DSNY8zaekgiak79sSRD8g.PNG.wjddydwndi/image.png?type=w773">
@@ -84,7 +84,7 @@ A,B,C아이템을 모두 획득한다면, 다음 스테이지로 넘어갈 수 �
 아래의 버튼을 누르면, 게임을 다시 시작할 수 있다.
 
 만약, SCORE가 일정 수치에 도달하면, 다음 스테이지로 이동할 수 있는 버튼과 함께, SCORE가 표시된다.
-<br>-------------------------------------------------------------------------
+<br>------------------------------------------------------------------------------------------
 <Br>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfODgg/MDAxNTU3NzE1MTkzOTg4.Lye3AEufKmrso0lzPxaSJcc6fYMemL9eEMUfLJorN9kg.UqSqm5r_I0eN0Xm-MnYGG6XFWPYv0HPq-EqHiepLtw0g.PNG.wjddydwndi/image.png?type=w773">
