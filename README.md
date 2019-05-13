@@ -33,11 +33,9 @@
 <p>   - setTimeout 메서드로 GameLoop 구현
 <p>   - 모든 객체들의 공통 기능은 최상위 클래스인 GameObject의 tick, render 메서드로 정의하여 하위 객체들이 재정의 할 수 있도록 설계</p>
 <h3>**</h3>
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTM0/MDAxNTU3Nzc5OTk4MDIx.HrbVc0MvswTjnz8r3k7ugyM8QC2isnLyBXyq08Sl4X4g.3HScl4rulrgQ_DoswZ9u13R_PmpgBFvQfeMBgX5Am7kg.PNG.wjddydwndi/4.png?type=w773" width="100%">
 <p>
-<p> (3)</p>
 <p>
-<p>   - Modal PopUp을 이용한 결과 출력</p>
+<p>   (4) Modal PopUp을 이용한 결과 출력</p>
 <p>   - 오디오 객체를 적용한 배경음 처리.</p>
 <br><br><br>
 <h2> 주요 코드 정리 </h2>
