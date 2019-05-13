@@ -12,7 +12,6 @@
 <br><br><br>
 <h2> 상세 설명 </h2>
 <br>
-		<p>	주요 기능 설명</p>
 <br>
 <br>
 <p>1. 오디오 객체를 적용한 배경음 처리.</p>
@@ -30,4 +29,6 @@
 <br>
 <br>
 <p> 게임 진행 화면 </p>
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjM1/MDAxNTU3Nzc4NjgzODM2.SGYBE9u8s_9oTWTGqK4-9Ypo40jL3Z7nJuQB8P8kvqsg.W_h-lM3UmjbtuvGlOmombbz_28KqQ3KBer2LNNzCQfcg.PNG.wjddydwndi/000.png?type=w773" width="100%">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTEy/MDAxNTU3Nzc4OTU1NDgz.dX6h0nPOipE-17OcaoIK1gZHQNZv_ducGS1FgzxwpGcg.bhppE04RHEyUHMChDXW3gdZDPSath49DMVGOVJQZykog.PNG.wjddydwndi/2.png?type=w773" width="100%">
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMTY3/MDAxNTU3Nzc4OTU1NTg3.OqPDskBwMG6Nu8rhpaYHp7FX7OAfjGQBPjRs-hBmgywg.wBl9P8DZFfhg3WVqGiATnhbuMq-2YsqDGoTX-aI4m4Ig.PNG.wjddydwndi/3.png?type=w773" width="100%">
