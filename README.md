@@ -5,7 +5,6 @@
 <br>
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTA0/MDAxNTU3NzE0NDQ3MDY3.xNy6VUKCnGk6GW1j6e0DVC7mCnhnAmsEVe1AykGjKp8g.K9vTD8_FIu5ZPBHNjQdlQJqRlbnOeUy6gkflZlZ1bOYg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjMw/MDAxNTU3NzE0NDU1NzU3.PQgFjQOZVE3hKsigo0ucM1mUyl3OxeiFzgxZe0V3LS4g.TC4ZPo1EcbENe4mPkMKhwKCtEcjKytMC6IDxhmqy3tgg.PNG.wjddydwndi/image.png?type=w773">
 <br>
 <br>
 <p>프로젝트 주제	:  JavaScript를 사용한 게임 구현</p>
