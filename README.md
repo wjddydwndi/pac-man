@@ -1,4 +1,4 @@
-ㅡ<<br>
+
 <br>
 <h1>Pac-man</h1>
 
@@ -13,7 +13,8 @@
 <p>개발 툴		  :  EditPlus</p>
 <p>개발 기술 	  : javascript , css, html</p>
 <p>프로젝트 기간	:  2018. 12. 11 ~ 2018.12.15</p>
-<h2> 프로젝트 설명 </h2>
+<br><br><br>
+<h2> 상세 설명 </h2>
 <br>
 		<p style="text-align:center">	주요 기능 설명</p>
 <br>
