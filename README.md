@@ -1,13 +1,14 @@
 <h1>Pac-man</h1>
+<p>개발 툴 : EditPlus</p>
+<p>프로젝트 기간 : 2018. 12. 11 ~ 2018.12.15</p>
 
-	<h1 style="text-align:center">자바스크립트를 이용한 Pac-man</h1>
 <br>
 <br>
 <br>-JSON을 이용해서 Map을 구현
 <br>-충돌체크 센서를 구현하여, 충돌검사를 처리
 <br>-count를 이용한 애니메이션 처리
 <br>-GameObj.js , ObjectManager.js를 이용하여, 객체 관리
-<br><br>프로젝트 기간 : 2018. 12. 11 ~ 2018.12.15
+
 
 
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTA0/MDAxNTU3NzE0NDQ3MDY3.xNy6VUKCnGk6GW1j6e0DVC7mCnhnAmsEVe1AykGjKp8g.K9vTD8_FIu5ZPBHNjQdlQJqRlbnOeUy6gkflZlZ1bOYg.PNG.wjddydwndi/image.png?type=w773">
