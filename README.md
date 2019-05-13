@@ -4,7 +4,7 @@
 
 <br>
 <br>
-<div width="100%">
+<div style="text-align:center;">
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTRfMjk1/MDAxNTU3NzczMTg4OTc4.5TNaBXsoqbpb9isQ4b4E6bCsJz1tbZnimcM_8Fs-0scg.yzko8iiaS747UnZT383LullwR8Nq5nkABsbMfqh0CLcg.PNG.wjddydwndi/1.png?type=w773">
 </div>
 <br>
