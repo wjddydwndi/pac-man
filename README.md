@@ -38,9 +38,9 @@
 <br>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjcx/MDAxNTU3NzE0NjA4MDQ1.eOIgteKpqzmlyZ9iy2-VYtSNrv4fX50ovqzhaen5F4Yg.YKLrDrdt0H4yeHuxzHlbpkEBGEqg7g854gc0I4fSRwog.PNG.wjddydwndi/image.png?type=w773">
 Ⓐ 캐릭터가 이동하면서 동전을 획득할 때마다 ⓑ의 스코어가 올라간다.
-<br> - 동전 객체와 캐릭터간 충돌처리를 통해 배열에 담겨있던 동전을 하나씩 제거한다.
+<br><br> - 동전 객체와 캐릭터간 충돌처리를 통해 배열에 담겨있던 동전을 하나씩 제거한다.
 <br> - If문을 통해 동전 객체와 캐릭터간 충돌한다면, SCORE를 증가시켰다.
-<br>ⓒ 현재 진행중인 스테이지를 표시했다.
+<br><br>ⓒ 현재 진행중인 스테이지를 표시했다.
 <br>------------------------------------------------------------------------------------------
 <br>
 <br>
