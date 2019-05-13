@@ -79,6 +79,9 @@
 <br>------------------------------------------------------------------------------------------
 <Br>
 <br>
+	<h2>코드 정리</h2>
+	<p>
+	<p>캐릭터 움직임</p>
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfODgg/MDAxNTU3NzE1MTkzOTg4.Lye3AEufKmrso0lzPxaSJcc6fYMemL9eEMUfLJorN9kg.UqSqm5r_I0eN0Xm-MnYGG6XFWPYv0HPq-EqHiepLtw0g.PNG.wjddydwndi/image.png?type=w773">
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjk1/MDAxNTU3NzE1MTk3ODU2.IsjZg_5YMHffsAQF18VILszl-cFo2Rc1enJRIy4YPtcg.cAnN35Ut4J_bdxiFzWbwKADVBwCCkorbRGIJ0xhERjQg.PNG.wjddydwndi/image.png?type=w773">
 <img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjI4/MDAxNTU3NzE1MjAyNDc5.dI0jGsVU_cGznBYBlmivYT3fQaeQoXUUXpcZSoWX8S4g.ZcPmaZLdz5fYm47RIMr7q56W6cSaYtUn-dIuHT4jQyUg.PNG.wjddydwndi/image.png?type=w773">
