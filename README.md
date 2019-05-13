@@ -82,13 +82,27 @@
 	<h2>코드 정리</h2>
 	<p>
 	<p>캐릭터 움직임</p>
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfODgg/MDAxNTU3NzE1MTkzOTg4.Lye3AEufKmrso0lzPxaSJcc6fYMemL9eEMUfLJorN9kg.UqSqm5r_I0eN0Xm-MnYGG6XFWPYv0HPq-EqHiepLtw0g.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjk1/MDAxNTU3NzE1MTk3ODU2.IsjZg_5YMHffsAQF18VILszl-cFo2Rc1enJRIy4YPtcg.cAnN35Ut4J_bdxiFzWbwKADVBwCCkorbRGIJ0xhERjQg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjI4/MDAxNTU3NzE1MjAyNDc5.dI0jGsVU_cGznBYBlmivYT3fQaeQoXUUXpcZSoWX8S4g.ZcPmaZLdz5fYm47RIMr7q56W6cSaYtUn-dIuHT4jQyUg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjIx/MDAxNTU3NzE1MjA1MzI0.-E3ctSoVnToc0sAERZg8YMIV5UGrwbVWR1iDryg_tlQg.cib8ax1kbX7f1Lsnakq0cfvDoeAme174j6iq1LsJDgsg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfNjgg/MDAxNTU3NzE1MjA3NjEz.TwvWHDtpHt70gTDB__RqAONaJG9HXdQM63SRJi13TIEg.KBo9du3pKKdrSV0yKP8HvsD_R144i4BS_C6pvsctxk4g.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjgz/MDAxNTU3NzE1MjA5NzA0.LgHgT-SNDzw7jKIpQp92PZvm0dhom1onct1NgBQMxd4g.uo7_S647I5WaElPQx9fsxMn5nw7bLSIz_6wWfnaw25kg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTUw/MDAxNTU3NzE1MjEzMjg5.oMkLSR6acm37DFxsHs14ZY5YKOYJEUOJy3CsfbQUvYEg.StADGpo0aqQ2fKq9LMqxAguC9UxleI2VnHmCBe1yPO0g.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjM2/MDAxNTU3NzE1MjE1MTE0.WU9Gbsvm16FkIb84KhHTEp57kfovg8gZ5eYQH3qzV3Ig.tO2SdtjKAEQOCmJGEULeNqKqpW1F15niPpNoashayzYg.PNG.wjddydwndi/image.png?type=w773">
-<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTAx/MDAxNTU3NzE1MjE2OTQ2.qLCKpifQXvGRpTMRYpGzj6i2QgZgofvSzOI55dMS8PEg.8UGkU0Zp2_XTt3d3NEiMdXZJC1nTa1c0J-Ul_Sgp5O4g.PNG.wjddydwndi/image.png?type=w773">
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjM1/MDAxNTU3NzI2Mjk0Mjgz.fRJWzdmFCfTAN8JoWSDjJrJF-4HTJoRIY5uS2ptvU9kg.jWPBgaiyqCJ0g1QMp5j0zHh5Wp7intwuEWNlcSvNOQcg.PNG.wjddydwndi/image.png?type=w773">
+	<p>Index.html</p>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTAw/MDAxNTU3NzI2MzIwNTgx.GJQvsTGq8c4-fHEM9D6HohDO0C32xyUUXy4UvA2JcFUg.MMoKkvaDvaCiyTSOao6lEJS_Lhf-S1Amn3s_vV3Agu4g.PNG.wjddydwndi/image.png?type=w773">
 	
+
+
+<p>적군의 자동 움직임</p>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTU4/MDAxNTU3NzI2MzI0NzAz.d7tJb9FYMZPL2dzA0s4NYyWLuTWAPbnD6MY-XDiKo_Ag.f4oFznvFnjsNfQoO-B2Zi3BCK3MIW_R3cVLyVgcNSlkg.PNG.wjddydwndi/image.png?type=w773">
+
+<p>객체 관리 Class</p>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMzQg/MDAxNTU3NzI2MzI3ODM0.SYpZEhVBtPTgnHngSC6QSB1nl-zyH9MTydRvA8Nk_ikg.4kqWN-687I-cE2hWRTOP8DLYI-FnD1NivaVZBM_JjxUg.PNG.wjddydwndi/image.png?type=w773">
+
+<p>충돌체크 센서</p>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTg5/MDAxNTU3NzI2MzMwNzgw.eetPfLDc493EHhWNfBFQFkLMiyDxlXr8ks9ZxKK_Sk8g.BlYY-ASgxeTKI_oF0dNGKWq2QpeVqyoiW984tzdCLGog.PNG.wjddydwndi/image.png?type=w773">
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfNTQg/MDAxNTU3NzI2MzMzMDAy.bsKYpUTTMC6kY2BJW8l5glUpDAfpVizURGJkVMI8cS0g.2mPpXa4_uWFJRM1C7QsJe9IWOlGJcplO9EK3mFFhtswg.PNG.wjddydwndi/image.png?type=w773">
+
+<p>캐릭터 애니메이션 효과</p>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMTU3/MDAxNTU3NzI2MzM2MTUz.NoWHuqHqWxNtVDfp94kCY2muu8ud7FAOicEBtZqb67Eg.hvxudPSigame4SliXK1qsKlD3DgQw4cPQ1QMxex7if0g.PNG.wjddydwndi/image.png?type=w773">
+
+<p>Map관리</p>
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfNTYg/MDAxNTU3NzI2NDA5NTkz.09RMMHkU1-C8GY74fbBDeeoE2LpfU3HqGRJSWBCulnkg.WjBjMbOff54X6T8S7dp-9repg5dqElhnPT3Fkx1Ojj0g.PNG.wjddydwndi/image.png?type=w773">
+
+<img src="https://postfiles.pstatic.net/MjAxOTA1MTNfMjY5/MDAxNTU3NzI2NDEzNjQ0.iB5rVxbLWMOJ9sZ4nNmhzhUJ2NNtMVFyXko_cSP-MHEg.nmCTA_7vhU80Z0tPAl6hl4n14aKdUwJYHzL9DSK_V9Eg.PNG.wjddydwndi/image.png?type=w773">
